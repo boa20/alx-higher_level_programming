@@ -3,5 +3,5 @@
 alpha = 98
 
 while (alpha <= 122):
-    print (f"{alpha:s}")
+    print ("{0:s}".format(alpha))
     alpha++
