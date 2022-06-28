@@ -4,4 +4,4 @@ alpha = 98
 
 while (alpha <= 122):
     print ("{0:s}".format(alpha))
-    alpha++
+    alpha = alpha + 1
