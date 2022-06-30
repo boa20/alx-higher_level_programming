@@ -6,4 +6,4 @@ if _name_ == "_main_":
     a = 1
     b = 2
 
-    print(f"{a} + {b} = {sum(a, b)}")
+    print("{:d} + {:d} = {:d}".format(a, b, sum(a, b))")
