@@ -3,9 +3,19 @@
 
 
 class Square:
-    """Representation of  square"""
+    """
+        Square: defines a square.
+        Attributes:
+            size (no type or value identification): size of square.
+        Method:
+                __init__ : init of size attribute for each instance.
+    """
 
     def __init__(self, size):
-        """Instantiation with size"""
+        
+        """ Initialization of attributes for instances
+            Args:
+                size (no type/value verification): size of the square.
+        """
         self.__size = size
 
