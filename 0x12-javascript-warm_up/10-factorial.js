@@ -1,14 +1,19 @@
 #!/usr/bin/node
 
-let num = parseInt(process.argv[2]);
-let factorial = num;
+const num = parseInt(process.argv[2]);
+let facto = num;
+
+function factorial (num) {
+  facto = facto * (num - 1);
+  num = num - 1;
+  if (num > 1) {
+    factorial(num);
+  }
+}
 
 if (isNaN(num) || num === 1) {
   console.log('1');
 } else {
-  while (num > 1) {
-    factorial = factorial * (num - 1);
-    num = num - 1;
-  }
-  console.log(factorial);
+  factorial(num);
+  console.log(facto);
 }
