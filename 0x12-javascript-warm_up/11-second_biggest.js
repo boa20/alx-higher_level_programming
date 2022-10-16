@@ -7,7 +7,7 @@ if (process.argv.length < 4) {
   for (let i = 0; i < (process.argv.length - 2); i++) {
     nums[i] = parseInt(process.argv[i + 2]);
   }
-  nums.sort(function (a, b) { return a - b; });
+  nums.sort(function sortNum (a, b) { return a - b; });
   console.log(nums);
   console.log(nums[nums.length - 2]);
 }
